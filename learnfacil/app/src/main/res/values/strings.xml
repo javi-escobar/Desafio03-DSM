@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Learn Fácil</string>
+    <string name="guardar">Guardar</string>
+    <string name="titulo">Título</string>
+    <string name="desc">Descripción</string>
+    <string name="tipo">Tipo</string>
+    <string name="enlace">Enlace</string>
+    <string name="img">Enlace de Imagen</string>
+    <string name="busId">Ingrese el ID del recurso</string>
+    <string name="busRe">Buscar Recurso</string>
+</resources>
