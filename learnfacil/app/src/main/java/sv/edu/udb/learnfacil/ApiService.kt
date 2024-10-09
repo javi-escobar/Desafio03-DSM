@@ -13,6 +13,7 @@ interface ApiService {
     fun crearRecurso(@Body recurso: Recurso) : Call<Recurso>
     @PUT("learnfacil/learnfacil/{id}")
     fun actualizarRecurso(@Path("id") id: Int, @Body recurso: Recurso) : Call<Recurso>
-    @PUT("learnfacil/learnfacil/{id}")
-    fun eliminarRecurso(@Path("id") id: Int, @Body recurso: Recurso) : Call<Void>
+    @DELETE("learnfacil/learnfacil/{id}")
+    fun eliminarRecurso(@Path("id") id: Int): Call<Void>
+
 }

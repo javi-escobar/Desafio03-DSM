@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Learnfacil"
         tools:targetApi="31">
         <activity
+            android:name=".ActualizarRecurso"
+            android:exported="false" />
+        <activity
+            android:name=".EditarRecurso"
+            android:exported="false" />
+        <activity
             android:name=".AgregarRecurso"
             android:exported="false" />
         <activity

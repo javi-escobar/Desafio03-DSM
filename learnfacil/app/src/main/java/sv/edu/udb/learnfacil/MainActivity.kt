@@ -112,4 +112,23 @@ class MainActivity : AppCompatActivity() {
             }
         })
     }
+
+    fun eliminarRecurso(id: Int) {
+        val call = api.eliminarRecurso(id)
+        call.enqueue(object : Callback<Void> {
+            override fun onResponse(call: Call<Void>, response: Response<Void>) {
+                if (response.isSuccessful) {
+                    Toast.makeText(this@MainActivity, "Recurso eliminado", Toast.LENGTH_SHORT).show()
+                    obtenerRecursos()
+                } else {
+                    Toast.makeText(this@MainActivity, "Error al eliminar recurso: ${response.code()}", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            override fun onFailure(call: Call<Void>, t: Throwable) {
+                Toast.makeText(this@MainActivity, "Error en la llamada: ${t.message}", Toast.LENGTH_SHORT).show()
+            }
+        })
+    }
+
 }

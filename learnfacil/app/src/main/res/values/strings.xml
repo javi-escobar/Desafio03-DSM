@@ -8,4 +8,6 @@
     <string name="img">Enlace de Imagen</string>
     <string name="busId">Ingrese el ID del recurso</string>
     <string name="busRe">Buscar Recurso</string>
+    <string name="editar">Editar</string>
+    <string name="eliminar">Eliminar</string>
 </resources>
